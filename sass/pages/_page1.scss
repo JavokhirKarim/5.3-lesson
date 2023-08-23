@@ -10,6 +10,7 @@ main {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         .img {
           img {
             opacity: 10000;
@@ -44,6 +45,37 @@ main {
           line-height: 150%; /* 54px */
           padding-top: 44px;
           padding-bottom: 44px;
+        }
+        .text {
+          display: flex;
+          // justify-content: space-between;
+          justify-content: center;
+          flex-wrap: wrap;
+          column-gap: 500px;
+          align-items: center;
+          .p1 {
+            color: var(--main-on-surface, #414141);
+
+            /* Desc/Header/M */
+            font-family: Rubik;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 150%; /* 54px */
+            padding-top: 44px;
+            padding-bottom: 44px;
+          }
+          .p10 {
+            color: var(--grayscale-hardest, #606060);
+
+            /* Desc/Text/S */
+            font-family: Rubik;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 24px */
+            text-decoration-line: none;
+          }
         }
         .cards {
           display: flex;
@@ -159,6 +191,7 @@ main {
         .cards {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
 
           .card {
             display: flex;

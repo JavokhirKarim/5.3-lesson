@@ -292,6 +292,7 @@ main .delivery .container .delivery-content {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 main .delivery .container .delivery-content .img img {
@@ -323,6 +324,38 @@ main .off .container .off-content .p1 {
   line-height: 150%; /* 54px */
   padding-top: 44px;
   padding-bottom: 44px;
+}
+
+main .off .container .off-content .text {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 500px;
+       column-gap: 500px;
+  align-items: center;
+}
+
+main .off .container .off-content .text .p1 {
+  color: var(--main-on-surface, #414141);
+  /* Desc/Header/M */
+  font-family: Rubik;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 54px */
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+main .off .container .off-content .text .p10 {
+  color: var(--grayscale-hardest, #606060);
+  /* Desc/Text/S */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  text-decoration-line: none;
 }
 
 main .off .container .off-content .cards {
@@ -438,6 +471,7 @@ main .advice .container .advice-content .p6 {
 main .advice .container .advice-content .cards {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 main .advice .container .advice-content .cards .card {
